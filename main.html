@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RaspTop home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/offgrid.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">RaspTop</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#whyus" class="w3-bar-item w3-button"><i class="fa fa-user"></i> WHY US</a>
+      <a href="#specs" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SPECIFICATIONS</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#whyus" onclick="w3_close()" class="w3-bar-item w3-button">WHY US</a>
+  <a href="#specs" onclick="w3_close()" class="w3-bar-item w3-button">SPECIFICATIONS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small"><mark>Purchase something that matters</mark></span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Learn more about us</span><br>
+    <span class="w3-large"><mark>Stop wasting valuable time with repairs and customer service. When you buy a RaspTop, you get lifetime warranty, and speedy customer service.</mark></span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about us</a></p>
+  </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE PRODUCT</h3>
+  <p class="w3-center w3-large">Key features of our new launch</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Customisable</p>
+      <p>Our line of RaspTops are highly customisable, with each order built to the user's choice, including your choice of processor. This means you can get them in a big clamshell case, or a small USB PC.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Repairable</p>
+      <p>Being built from commonly market available parts ensures your purchase is repairable down to the smallest parts with large documentation. You can get it repaired from us, or from anyone else, and your warranty will not go away.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Tailored for every use</p>
+      <p>For battlefield use, to a on-the-go watch, or a simple USB you can plug into your TV, the RaspTops can be used for any need. Simply ask, and we are happy to help.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Our 24/7 customer service ensures you have all the after sales service you require. We also ensure most applications run on our device, and port them to the architecture if necessary. If there is no support for your favorite app, message us!</p>
+    </div>
+  </div>
+  <img src="images/watch.jpg" class="w3-image w3-center"></img>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Who likes ugly, boring looking products? The answer: <b>Nobody.</b> We know how to make hardware that works great, and still gets the damn job done with <i>style</i>. </p>
+      <p><a href="#specs" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Specifications</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="images/design.webp" alt="Buildings and our HandTop" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Why us Section -->
+<div class="w3-container" style="padding:128px 16px" id="whyus">
+  <h3 class="w3-center">WHY US</h3>
+  <p class="w3-center w3-large">Let's be real. There are a million options out there. Why buy us?</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Open source</h3>
+          <p>In today's world, where everything is closed source, and where code and ideas are stolen left and right, we choose to release all our code for everyone to see. Go ahead, dig through the code. You'll find no spyware.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Long term support</h3>
+          <p>Manufactures who drop support for their devices right after a few years deserve a special place in technology's Hall of Shame. We firmly believe that devices should have long term support for atleast 20 years, so we support all architectures we sell, be it x86, ARM, RISC-V etc.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Armed to the teeth</h3>
+          <p>Want more USB ports? Gigabit ethernet support? A ridiculously powerful GPU built-in? We have your back. Each order is customised as per your wishes, and we can do it in bulk too. Just simply <i>*ask*</i>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Pricing</h3>
+          <p>We have transparent pricing, even for the wires we put in. Any add-ons you request, will also have their pricing displayed. Community requests for popular software to be ported shall be free of cost.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Specs Section -->
+<div class="w3-container w3-light-grey w3-padding-64" id="specs">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Specifications</h3>
+      <p>Whether it be a tiny Pi Zero with 1.2 GhZ with 512 MB ram, or the LattePanda Sigma with 4.6 GhZ clock speeds, we have all kinds of juice you need.</p>
+      <p>The cases come in various designs as well. A Hello Kitty styled back case? A photo of Richard Stallman on your clamshell? Or just a goofy meme? We got you covered.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="w3-margin-right"></i>Architectures</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">RISC-V, ARM, x86</div>
+      </div>
+      <p class="w3-wide"><i class="w3-margin-right"></i>Boards used</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">Raspberry Pi, Milk-V, LattePanda</div>
+      </div>
+      <p class="w3-wide"><i class="w3-margin-right"></i>Form factors</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">Watch, Multiscreen, Clamshell, Handheld, USB</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a product that fits the budget and your likes.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Handtop</li>
+        <li class="w3-padding-16 w3-image"><img src="images/handtop.webp" height=80% width=80%></li>
+        <li class="w3-padding-16"><b>3.5 inch</b> screen</li>
+        <li class="w3-padding-16">Pi 3 to Pi 5 or Milk-V</li>
+        <li class="w3-padding-16"><b>6 hour</b> battery backup</li>
+        <li class="w3-padding-16">Fits in your pocket</li>
+        <li class="w3-padding-16">GSM slot with <b>5G</b> support available</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$80</h2>
+        </li>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Securebook</li>
+        <li class="w3-padding-16 w3-image"><img src="images/securebook.jpg" height=90% width=90%></li>
+        <li class="w3-padding-16"><b>3.5 or 10 inch</b> screen</li>
+        <li class="w3-padding-16"><b>Any</b> architecture</li>
+        <li class="w3-padding-16">Built for the <b>battlefield</b> with 1 week battery backup</li>
+        <li class="w3-padding-16">Built-in EMP shielding</li>
+        <li class="w3-padding-16">All common use ports available</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$1000</h2>
+        </li>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Dongle</li>
+        <li class="w3-padding-16 w3-image"><img src="images/dongle.jpg" height=90% width=90%></li>
+        <li class="w3-padding-16">Carry <b>anywhere</b></li>
+        <li class="w3-padding-16">Plug into your TV</li>
+        <li class="w3-padding-16">Raspberry Pi Zero used</li>
+        <li class="w3-padding-16">SSD expansion upto 1TB</li>
+        <li class="w3-padding-16">Free USB port expansion upto 4 ports</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$30</h2>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Interested? Reach out to us. We are willing to work!</p>
+  <div style="margin-top:48px">
+    <form action="" target="_blank"><!-- I have zero idea where to send the form to as I will NOT be building a backend setup. -->
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <img src="images/bigone.JPG" class="w3-image" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Made by <a href="https://github.com/Jameswill-Winsock/" title="Jameswill-Winsock" class="w3-hover-text-green">Jameswill-Winsock</a></p>
+</footer>
+ 
+<script>
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
